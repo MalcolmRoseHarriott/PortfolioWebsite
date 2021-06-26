@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
+
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    height: 100vh;
+    background-color: #1f1f1f;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+p {
+    text-align: left;
+    margin-left: 10%; margin-right: 10%;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+.contactSection p {
+    margin-top: 35%;
+    height: 5%;
+    text-align: center;
+    width: 80%;
+}
+
+.topNav {
+    overflow: visible;
+    position: sticky;
+    top: 0;
+    float: right;
+    width: 100%;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.topNav:hover {
+    background: black;
+    box-shadow: 0px 0px 80px #A0A0A0;
+    -webkit-box-shadow: 0px 0px 80px #A0A0A0;
+    -moz-box-shadow: 0px 0px 80px #A0A0A0;
+}
+
+nav {
+    margin: 0;
+    float: right;
+    background: linear-gradient(90deg, rgba(28, 28, 28, 0) 0%,  rgba(28, 28, 28, 0.651) 30%, rgba(0,0,0,1) 100%);
+}
+
+.imgbar {
+    margin: 0;
+    float: right;
+    background: black;
+    
+}
+
+body img {
+    margin: 0.6em;
+    margin-left: 1em;
+    margin-right: 1.5em;
+    list-style-type: none;
+}
+
+nav ul{
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding-bottom: 19px;
+    list-style-type: none;
+}
+
+
+nav li {
+    margin: 0;
+    display: inline;
+}
+
+nav li a {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color:#c9c9c9;
+    padding: 20px 30px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav li a img {
+    margin: 0;
+    width: 1.2em;
+    vertical-align: middle;
+}
+
+nav li a:hover {
+    margin: 0;
+    color: black;
+    background: white;
+}
+
+.linkedin:hover {
+    margin: 0;
+    color: white;
+    background: #0072B1;
+
+}
+
+.main {
+    padding-top: 4em;
+    margin: 0;
+    clear: right;
+}
+
+h1 {
+    font-weight: 400;
+    margin-top: 2em;
+    font-size: 6rem;
+}
+
+h2 {
+    font-weight:300;
+    font-size: 1.75rem;
+}
+
+h1 span{
+    color: #cf8888
+}
+
+hr {
+    margin-top: 2.5em;
+    border: 2.5px solid #474747;
+}
+
+
+img {
+    margin: 0.5em;
+    width: 3em;
+}
+
+.topArea {
+    margin: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0)),linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0) 50%), url(img/timeraclipcropped.gif); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 25%;
+}
+
+.container:hover .topNav {
+    background: black;
+    box-shadow: 0px 0px 80px #A0A0A0;
+    -webkit-box-shadow: 0px 0px 80px #A0A0A0;
+    -moz-box-shadow: 0px 0px 80px #A0A0A0;
+}
+
+.about {
+    top: 0%;
+    position: relative;
+}
+
+.middleArea {
+    top: 0;
+    margin: 0;
+    height: 105em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bio {
+    padding: 7.5em 20em 50em 20em;
+    margin: 0;
+    margin-top: 5%;
+    font-size: 16px;
+    z-index: 2;
+    position: relative;
+}
+
+.bio p {
+    float: left;
+    width: 40%;
+}
+
+.bio h3 {
+    float: left;
+    width: 60%;
+}
+
+.timerarun {
+    float: right;
+    margin-top: 1%;
+    background-image: url(img/timerarun.gif);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 490px;
+    box-shadow: 0 0 20px 10px #1f1f1f inset;
+    -webkit-box-shadow: 0 0 20px 10px #1f1f1f inset;
+    -moz-box-shadow: 0 0 20px 10px #1f1f1f inset;
+}
+
+.bio h3 {
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+#borderLeft {
+    border-left: 0.4em solid #ffffff;
+    border-top: 0.4em solid #ffffff;
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    top: 15%;
+    bottom: 0;
+}
+
+#borderRight {
+    border-right: 0.4em solid #ffffff;
+    border-bottom: 0.4em solid #ffffff;
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    right: 16%;
+    top: 60%;
+    bottom: 0;
+}
+
+
+#borderLeft2 {
+    border-left: 0.4em solid #ffffff;
+    border-top: 0.4em solid #ffffff;
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    left: 3%;
+    top: 7%;
+    bottom: 0;
+}
+
+#borderRight2 {
+    border-right: 0.4em solid #ffffff;
+    border-bottom: 0.4em solid #ffffff;
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    right: 3%;
+    top: 80%;
+    bottom: 0;
+}
+
+.languageSection{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0)),linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0) 50%), url(img/timeraclipcropped.gif); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60%;
+    z-index: 5;
+    margin: 0;
+    position: relative;
+}
+
+.languages {
+    position: relative;
+    width: 70%;
+    display: inline-block;
+}
+
+.contact {
+    position: relative;
+    width: 50%;
+    display: inline-block;
+}
+
+.languages h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.languages ul{
+    list-style-type: none;
+}
+
+.languages li{
+    margin: .75em;
+    display: inline-block;
+}
+
+.languages hr {
+    border-width: 0.1px;
+    width: 70%;
+    border-color: white
+}
+
+.languageBox {
+    display: block;
+    padding: 2.5em;
+    width: 100%;
+    color: white;
+    border-radius: 25px;
+    top: 170px;
+    z-index: 3;
+    position: absolute;
+    margin-bottom: 5em;
+    padding-bottom: 4em;
+}
+
+label {
+    display: block;
+    resize: none;
+    text-align: left;
+    width: 70%;
+    left: 15%;
+    margin-top: 1em;
+    margin-left: 0;
+    position: relative;
+}
+
+input {
+    display: block;
+    resize: none;
+    text-align: left;
+    background-color: #1f1f1f;
+    color: white;
+    width: 70%;
+    font-size: 16px;
+    height: 2em;
+    font-family: 'Montserrat', sans-serif;
+    left: 15%;
+    margin-top: 1em;
+    margin-left: 0;
+    position: relative;border-style:solid;
+    padding: 5px;
+}
+
+
+textarea {
+    display: block;
+    resize: none;
+    border-width: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 16px;
+    width: 70%;border-style:solid;
+    padding: 5px;
+    height: 10em;
+    left: 15%;
+    margin-top: 1em;
+    background-color: #1f1f1f;
+    color: white;
+    margin-left: 0;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.contactBox {
+    display: block;
+    background-color: rgb(20, 20, 20);
+    padding: 2.5em;
+    width: 100%;
+    color: white;
+    border-radius: 16px;
+    word-spacing: 10px;
+    height: 700px;
+    top: -150px;
+    z-index: 3;
+    position: absolute;
+    margin-bottom: 5em;
+    padding-bottom: 4em;
+}
+
+.projects {
+    margin-top: 15%;
+    height: 115em;
+    position: relative;
+    overflow: hidden;
+}
+
+.contactSection{
+    top: 15%;
+    height: 45em;
+    background-image: linear-gradient(#1f1f1f, #6495ED);
+    z-index: 5;
+    margin: 0;
+    position: relative;
+}
+
+.projects h3 {
+    font-size: 32px;
+    font-weight: 400;
+    padding: 4em 0 0 0;
+    margin: 3em 0 2em 0;
+    color: white;
+    position: relative;
+}
+
+.contact h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.projects h3 hr {
+    border-width: 0.1px;
+    width: 10%;
+    margin-top: 1%;
+    position: relative;
+    border-color: white;
+}
+
+.projects h3 {
+    font-size: 32px;
+    font-weight: 400;
+    padding: 4em 0 0 0;
+    margin-top: 0;
+    color: white;
+    position: relative;
+}
+
+.bio h3 hr {
+    border-width: 0.1px;
+    width: 10%;
+    border-color: white;
+}
+
+.contact hr {
+    border-width: 0.1px;
+    width: 70%;
+    border-color: white
+}
+
+.projectGrid {
+    margin-top: 0em;
+    margin: 0;
+    display: inline-grid;
+    padding: 0;
+    width: 75%;
+    height: 10em;
+    grid-template-columns: 50% 50%;
+}
+
+.projectContent {
+    position: relative;
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    transition: 10s;
+}
+
+.projectContent p {
+    font-size: 16px;
+}
+
+.endlay {
+    position: relative;
+    top: 0;
+    height: 100%;
+    background-color: #1f1f1f;
+}
+
+.projectContent:hover .overlay{
+    text-align: center;
+    opacity: 1;
+    height: 100%;
+    padding: 2em .5em;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.grid-item{
+    margin: 0%;
+    padding: 0;
+}
+
+.grid-item-center{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    height: 30%;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    transition: all 250ms ease;
+    background-color: rgba(65, 50, 50, 0.8);
+}
+
+.overlay img {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    max-width: 10%;
+    height: auto;
+}
+
+.mm8bdm {
+    position: absolute;
+    right: 22%;
+    font-size: smaller;
+    bottom: 8%;
+    max-width: 10%;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.projectContent img {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transition: 250ms ease;
+}
+
+.submit {
+    color: white;
+    background: black;
+    left: 18%;
+    position: absolute;
+    bottom: 8%;
+    margin-top: 5%;
+    font-size: 16px;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 0.5em;
+    transition: 0.5s;
+}
+
+.submit:hover {
+    color: black;
+    background: white;
+}
+
+.gridItemContents img {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transition: 250ms ease;
+}
