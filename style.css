@@ -5,7 +5,6 @@
   }
 
 html {
-    overflow: hidden;
     scroll-behavior: smooth;
 }
 
@@ -16,8 +15,6 @@ body {
     text-align: center;
     height: 100vh;
     background-color: #1f1f1f;
-    perspective: 1px;
-    transform-style: preserve-3d;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -38,7 +35,7 @@ p {
 
 .topNav {
     overflow: visible;
-    position: sticky;
+    position: fixed;
     top: 0;
     float: right;
     width: 100%;
@@ -154,7 +151,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-bottom: 25%;
+    height: 100%;
 }
 
 .container:hover .topNav {
