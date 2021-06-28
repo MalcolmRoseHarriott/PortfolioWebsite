@@ -1,3 +1,14 @@
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos <= currentScrollPos && $(window).width() < 680) {
+    document.getElementById("navbar").style.top = "-180px";
+  } else {
+    document.getElementById("navbar").style.top = "0";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 $(document).ready(function () 
 {
     $('.submit').click(function (event) 
