@@ -350,7 +350,7 @@ img {
 
 .projects {
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     position: relative;
     overflow: visible;
 }
@@ -626,6 +626,8 @@ textarea {
     display: block;
     background-color: rgb(20, 20, 20);
     padding: 4%;
+    padding-top: 6%;
+    padding-bottom: 6%;
     width: 100%;
     color: white;
     border-radius: 16px;
