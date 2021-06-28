@@ -405,6 +405,7 @@ img {
     margin: 0;
     text-align: center;
     transition: 10s;
+    pointer-events: all;
 }
 
 .projectContent p {
@@ -415,7 +416,7 @@ img {
     .projectContent p {
         margin: 0;
         padding: 0;
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
   }
 
@@ -426,7 +427,7 @@ img {
     background-color: #1f1f1f;
 }
 
-.projectContent:hover .overlay{
+.projectContent:hover .overlay, .projectContent:active .overlay, .projectContent:focus .overlay {
     text-align: center;
     opacity: 1;
     height: 100%;
@@ -435,17 +436,37 @@ img {
 }
 
 @media screen and (max-width: 680px) {
-    .projectContent:hover .overlay {
+    .projectContent:hover .overlay, .projectContent:active .overlay, .projectContent:focus .overlay {
         margin: 0;
         padding: 0;
-        font-size: 1.4rem;
+        font-size: 3.5vw;
     }
   }
 
-.grid-item{
+.grid-item {
     margin: 2px;
     padding: 0;
 }
+
+@media only screen and (hover: none) {
+    .projectContent a {
+        pointer-events: none;
+    }
+}
+
+@media only screen and (hover: none) {
+    .projectContent a:hover, .projectContent a:active, .projectContent a:focus {
+        pointer-events: all;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .projectContent:hover .overlay {
+        margin: 0;
+        padding: 0;
+        font-size: 3.5vw;
+    }
+  }
 
 .grid-item-center{
     margin: 0;
@@ -467,6 +488,16 @@ img {
     color: white;
     transition: all 250ms ease;
     background-color: rgba(65, 50, 50, 0.8);
+}
+
+.overlay a {
+    pointer-events: all;
+}
+
+@media only screen and (hover: none) {
+    .overlay {
+        pointer-events: all;
+    }
 }
 
 .overlay img {
