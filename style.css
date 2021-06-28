@@ -501,9 +501,9 @@ img {
 
 .overlay img {
     position: absolute;
-    right: 5%;
     bottom: 5%;
     max-width: 10%;
+    vertical-align: middle;
     height: auto;
 }
 
