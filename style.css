@@ -315,7 +315,7 @@ img {
 }
 
 .languages ul{
-    margin-right: 1em;
+    margin-right: 1.5em;
     list-style-type: none;
 }
 
@@ -323,15 +323,6 @@ img {
     margin: .5em;
     display: inline-block;
 }
-
-
-@media screen and (max-width: 680px) {
-    .languages li {
-        max-width: 85px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-  }
 
 .languages hr {
     border-width: 0.1px;
