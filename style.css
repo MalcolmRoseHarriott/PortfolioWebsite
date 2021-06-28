@@ -206,7 +206,7 @@ img {
     width: 60%;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1200px) {
     .bio h3 {
         width: 100%;
     }
@@ -226,7 +226,7 @@ img {
 }
 
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1200px) {
     .bio p, .timerarun {
         width: 90%;
     }
@@ -390,7 +390,7 @@ img {
     grid-template-columns: 50% 50%;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1200px) {
     .projectGrid {
         grid-template-columns: 100%;
     }
@@ -432,7 +432,7 @@ img {
     text-align: center;
     opacity: 1;
     height: 100%;
-    padding: 2em .5em;
+    padding: 4% 2%;
     background-color: rgba(0,0,0,0.75);
 }
 
@@ -611,11 +611,11 @@ textarea {
 
 .contact {
     position: relative;
-    width: 50%;
+    width: 960px;
     display: inline-block;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1200px) {
     .contact {
         width: 80%;
     }
