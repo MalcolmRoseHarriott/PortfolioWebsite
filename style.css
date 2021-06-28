@@ -87,7 +87,23 @@ nav li a {
 }
 
 @media screen and (max-width: 680px) {
+    nav li {
+        display: inline-grid;
+        margin: 0;
+        padding: 0;
+    }
+  }
+
+@media screen and (max-width: 680px) {
+      nav ul {
+          margin: 0;
+          padding: 0;
+      }
+    }
+
+@media screen and (max-width: 680px) {
     nav li a {
+        margin: 0;
         padding: 20px 2vw;
     }
   }
@@ -148,8 +164,15 @@ img {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
     background-size: cover;
 }
+
+@media screen and (max-width: 680px) {
+    .topArea {
+        height: 100%;
+    }
+  }
 
 .container:hover #navbar {
     background: black;
@@ -226,16 +249,16 @@ img {
     border-left: 0.4vw solid #ffffff;
     border-top: 0.4vw solid #ffffff;
     position: absolute;
-    height: 10%;
-    width: 10%;
+    height: 5vw;
+    width: 10vw;
 }
 
 #borderRight {
     border-right: 0.4vw solid #ffffff;
     border-bottom: 0.4vw solid #ffffff;
     position: absolute;
-    height: 10%;
-    width: 10%;
+    height: 5vw;
+    width: 10vw;
     bottom: 0;
     right: 0;
     margin-bottom: 14%;
@@ -247,19 +270,19 @@ img {
     border-left: 0.4vw solid #ffffff;
     border-top: 0.4vw solid #ffffff;
     position: absolute;
-    height: 10%;
-    width: 10%;
+    height: 8vw;
+    width: 10vw;
     left: 3%;
-    top: 7%;
-    bottom: 0;
+    top: 0;
+    margin-top: 5.5%;
 }
 
 #borderRight2 {
     border-right: 0.4vw solid #ffffff;
     border-bottom: 0.4vw solid #ffffff;
     position: absolute;
-    height: 10%;
-    width: 10%;
+    height: 8vw;
+    width: 10vw;
     right: 3%;
     top: 100%;
     bottom: 0;
@@ -388,6 +411,14 @@ img {
     font-size: 16px;
 }
 
+@media screen and (max-width: 680px) {
+    .projectContent p {
+        margin: 0;
+        padding: 0;
+        font-size: 3vw;
+    }
+  }
+
 .endlay {
     position: relative;
     top: 0;
@@ -404,9 +435,10 @@ img {
 }
 
 @media screen and (max-width: 680px) {
-    .projectContent p, .projectContent:hover .overlay {
+    .projectContent:hover .overlay {
         margin: 0;
         padding: 0;
+        font-size: 1.4rem;
     }
   }
 
@@ -436,12 +468,6 @@ img {
     transition: all 250ms ease;
     background-color: rgba(65, 50, 50, 0.8);
 }
-
-@media screen and (max-width: 680px) {
-    .overlay {
-        font-size: 1.4rem;
-    }
-  }
 
 .overlay img {
     position: absolute;
